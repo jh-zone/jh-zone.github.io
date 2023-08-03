@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+  background-color: #fff2db;
+  color: #fff;
+}
+
+.jihyo {
+  background-color: #fa8959;
+  color: #fff;
+  padding: 0 0.2em;
+}
+
+.brand-container {
+  padding: 2em 0 2em 3em;
+  color: #5e3b29;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+.brand {
+  font-size: 1.5em;
+  color: #fa8959;
+  display: inline;
+}
+
+.tagline {
+  margin-left: 1em;
+  font-weight: 100;
+}
+
+.tagline a {
+  color: #fa8959;
+}
+
+.tagline a:hover {
+  text-decoration: underline;
+  color: #5875ac;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #fa8959;
+}
+
+.navbar {
+  background: #1e6578d0;
+  backdrop-filter: blur(10px);
+  padding-left: 1em;
+  margin-top: 1em;
+  border-radius: 50px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.banner {
+  background-image: url("images/banner.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.buy {
+  background-image: url("images/buy.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.buy-link {
+  margin-top: 350px;
+  padding: 1em;
+  border: 3px solid #fff;
+  background-color: #fa8959;
+}
+
+.buy-link {
+  color: #fff;
+}
+
+.buy-link:hover {
+  color: #5875ac;
+  text-decoration: underline;
+}
+
+.mv {
+  background-image: url("images/mv.webp");
+  padding-top: 500px;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  height: 1300px;
+}
+
+.mv iframe {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 700px;
+}
+.section-border {
+  border-top: 3px solid #fa8959;
+}
+
+/* Banner */
+
+/* Timeline */
+
+.release-timeline {
+  background-image: url("images/bg.webp");
+
+  background-position: right;
+}
+
+.timeline-with-icons {
+  backdrop-filter: blur(10px);
+  background-color: #202020be;
+  max-width: 520px;
+  border-left: 3px solid #fa8959;
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  text-shadow: none;
+  position: absolute;
+  top: -12px;
+  left: -58px;
+  background-color: #fa8959;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-with-icons .text-muted {
+  color: rgb(255, 248, 205) !important;
+}
