@@ -4,7 +4,65 @@ body {
   background-color: #fff;
   color: #353535;
   background-attachment: fixed;
-  background-image: url("images/bg.webp");
+  background-image: url("images/bg-light.webp");
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-image: url("images/bg-light.webp");
+}
+
+body.light-theme .brand-container {
+  background-color: #fff;
+}
+body.light-theme .jihyo {
+  color: #fff;
+}
+
+body.light-theme .navbar {
+  background: #1e6578c9;
+}
+
+body.light-theme .banner {
+  background-image: url("images/banner-light.webp");
+}
+
+body.light-theme .main {
+  background-color: #fafafa;
+  border: solid 1px #ebebeb;
+}
+
+body.light-theme ul.inline-list > li {
+  border-top: solid 1px #ebebeb;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-image: url("images/bg-dark.webp");
+}
+body.dark-theme .brand-container {
+  background-color: rgb(27, 29, 30);
+  color: #fff;
+}
+body.dark-theme .jihyo {
+  color: rgb(27, 29, 30);
+}
+
+body.dark-theme .banner {
+  background-image: url("images/banner-dark.webp");
+}
+body.dark-theme .main {
+  background-color: rgb(27, 29, 30);
+  border: solid 1px rgb(54, 58, 60);
+  color: rgb(199, 194, 186);
+}
+
+body.dark-theme .navbar {
+  background: #301916c9;
+}
+
+body.dark-theme ul.inline-list > li {
+  border-top: solid 1px rgb(54, 58, 60);
 }
 
 .jihyo {
@@ -14,9 +72,9 @@ body {
 }
 
 .brand-container {
-  padding: 2em 0 2em 3em;
+  background-color: #fff;
+  padding: 2em 0;
   color: #5e3b29;
-  background: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
 }
 
@@ -46,7 +104,7 @@ a:hover {
 }
 
 .navbar {
-  background: #1e6578;
+  background: #1e6578c9;
   backdrop-filter: blur(10px);
   padding-left: 1em;
   color: #fff;
@@ -73,7 +131,7 @@ a:hover {
   color: #fa8959;
 }
 .banner {
-  background-image: url("images/banner.webp");
+  background-image: url("images/banner-dark.webp");
   background-size: cover;
   background-position: center;
   background-size: cover;
@@ -88,7 +146,6 @@ a:hover {
 .main {
   background-color: #fafafa;
   border: solid 1px #ebebeb;
-
   min-height: 100vh;
   padding: 2em;
 }
@@ -134,4 +191,11 @@ ul.inline-list ul li {
 
 ul.inline-list li p {
   margin: 0;
+}
+
+/* align theme toggle right */
+.align-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
