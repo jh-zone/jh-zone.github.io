@@ -122,6 +122,13 @@ a:hover {
   filter: brightness(0) invert(1);
 }
 
+/* align theme toggle right */
+.align-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-text {
   margin-left: 5px;
   color: #fff;
@@ -158,44 +165,42 @@ a:hover {
   font-size: 1.3em;
 }
 
-ul {
+.main ul {
   list-style-type: none;
+}
+
+ul.inline-list > li {
+  margin: 20px 0 10px 0;
+  border-top: solid 1px #ebebeb;
+  padding-top: 20px;
 }
 
 .date {
   color: #777;
 }
 
-/* Apply display: inline only to nested <ul> and <li> */
-ul.inline-list {
-  list-style: none;
-  padding: 0;
-}
+@media screen and (min-width: 768px) {
+  /* Apply display: inline only to nested <ul> and <li> */
+  ul.inline-list {
+    list-style: none;
+    padding: 0;
+  }
 
-ul.inline-list > li {
-  display: block;
-  margin: 20px 0 10px 0;
-  border-top: solid 1px #ebebeb;
-  padding-top: 20px;
-}
+  ul.inline-list > li {
+    display: block;
+  }
 
-ul.inline-list ul {
-  display: inline;
-  padding: 0;
-}
+  ul.inline-list ul {
+    display: inline;
+    padding: 0;
+  }
 
-ul.inline-list ul li {
-  display: inline;
-  margin-right: 10px;
-}
+  ul.inline-list ul li {
+    display: inline;
+    margin-right: 10px;
+  }
 
-ul.inline-list li p {
-  margin: 0;
-}
-
-/* align theme toggle right */
-.align-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ul.inline-list li p {
+    margin: 0;
+  }
 }
