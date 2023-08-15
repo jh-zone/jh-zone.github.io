@@ -212,7 +212,7 @@
           // Use system-preferred theme if available
           const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
           body.classList.add(prefersDark ? 'dark-theme' : 'light-theme');
-          toggleIcon.classList.add(prefersDark ? 'fa-moon' : 'fa-sun');
+          toggleIcon.classList.add(prefersDark ? 'fa-sun' : 'fa-moon');
       }
 
       document.getElementById('theme-toggle').addEventListener('click', function(event) {
