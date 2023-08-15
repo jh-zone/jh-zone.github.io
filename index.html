@@ -207,7 +207,7 @@
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
           body.classList.add(savedTheme);
-          toggleIcon.classList.add(savedTheme === 'dark-theme' ? 'fa-moon' : 'fa-sun');
+          toggleIcon.classList.add(savedTheme === 'dark-theme' ? 'fa-sun' : 'fa-moon');
       } else {
           // Use system-preferred theme if available
           const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -221,8 +221,8 @@
           body.classList.toggle('dark-theme');
           body.classList.toggle('light-theme');
           const isDarkTheme = body.classList.contains('dark-theme');
-          toggleIcon.classList.toggle('fa-moon', isDarkTheme);
-          toggleIcon.classList.toggle('fa-sun', !isDarkTheme);
+          toggleIcon.classList.toggle('fa-sun', isDarkTheme);
+          toggleIcon.classList.toggle('fa-moon', !isDarkTheme);
 
           // Save the theme preference to localStorage
           const currentTheme = isDarkTheme ? 'dark-theme' : 'light-theme';
