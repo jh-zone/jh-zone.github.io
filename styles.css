@@ -161,6 +161,10 @@ a:hover {
   margin-top: 1em;
 }
 
+.video-container {
+  max-width: 100%;
+}
+
 .timeline-title {
   font-size: 1.3em;
 }
