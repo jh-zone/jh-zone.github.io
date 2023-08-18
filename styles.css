@@ -142,7 +142,6 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   border-bottom: 5px solid #5875ac;
   height: 100vh;
   max-height: 1440px;
