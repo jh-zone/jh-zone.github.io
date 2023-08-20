@@ -180,8 +180,20 @@ a:hover {
   left: 0;
 }
 
-.timeline-title {
+.title {
   font-size: 1.3em;
+}
+
+ul.performance li {
+  margin-top: 1em;
+}
+
+ul.performance li ul li {
+  margin-top: 0;
+}
+
+.fancam {
+  margin-left: -1em;
 }
 
 .main ul {
