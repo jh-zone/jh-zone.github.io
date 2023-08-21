@@ -36,6 +36,10 @@ body.light-theme ul.inline-list > li {
   border-top: solid 1px #ebebeb;
 }
 
+body.light-theme .performance-hr {
+  border-bottom: solid 1px #ebebeb;
+}
+
 /* Dark theme styles */
 body.dark-theme {
   background-image: url("images/bg-dark.webp");
@@ -63,6 +67,10 @@ body.dark-theme .navbar {
 
 body.dark-theme ul.inline-list > li {
   border-top: solid 1px rgb(54, 58, 60);
+}
+
+body.dark-theme .performance-hr {
+  border-bottom: solid 1px rgb(54, 58, 60);
 }
 
 .jihyo {
@@ -178,18 +186,35 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
+  border-radius: 5px;
 }
 
 .title {
   font-size: 1.3em;
 }
 
-ul.performance li {
-  margin-top: 1em;
+.default-list {
+  padding-left: 0;
 }
 
 ul.performance li ul li {
   margin-top: 0;
+}
+
+.performance-thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: filter 0.3s;
+}
+
+.performance-thumb:hover {
+  filter: brightness(65%);
+}
+
+.performance-hr {
+  border-bottom: solid 1px #ebebeb;
+  margin-bottom: 2em;
 }
 
 .fancam {
@@ -198,6 +223,7 @@ ul.performance li ul li {
 
 .main ul {
   list-style-type: none;
+  padding: 0;
 }
 
 ul.inline-list > li {
