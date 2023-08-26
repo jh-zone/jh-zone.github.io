@@ -237,6 +237,10 @@ ul.inline-list > li {
   color: #777;
 }
 
+.text-right {
+  float: right;
+}
+
 @media screen and (min-width: 768px) {
   /* Apply display: inline only to nested <ul> and <li> */
   ul.inline-list {
